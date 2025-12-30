@@ -1,3 +1,12 @@
+
+
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
         dummy_node = ListNode(0)
@@ -18,3 +27,21 @@ class Solution(object):
             if l2: l2 = l2.next
         
         return dummy_node.next
+    
+if __name__ == "__main__":
+    def build_list(nums):
+        head = ListNode(nums[0]); cur = head
+        for n in nums[1:]:
+            cur.next = ListNode(n); cur = cur.next
+        return head
+
+    def to_list(node):
+        res = []
+        while node:
+            res.append(node.val); node = node.next
+        return res
+
+    sol = Solution()
+    l1 = build_list([2,4,3])
+    l2 = build_list([5,6,4])
+    print(to_list(sol.addTwoNumbers(l1, l2)))  # espera [7,0,8]
