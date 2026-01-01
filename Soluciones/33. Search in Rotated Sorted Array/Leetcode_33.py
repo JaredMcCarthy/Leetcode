@@ -1,30 +1,31 @@
 
 
 class Solution:
-    def searchRotate(self, nums, target):
-    	n = len(nums)
-    	lo = 0
-    	ri = n - 1
+	def searchRotate(self, nums, target):
+		n = len(nums)
+		lo = 0
+		ri = n - 1
 
-    	while lo <= ri:
-    		mid = (lo + ri) // 2
+		while lo <= ri:
+			mid = (lo + ri) // 2
 
-    		if nums[mid] == target:
-    			return mid
+			if nums[mid] == target:
+				return mid
 
-    		if nums[mid] >= nums[lo]:
-    			if target >= nums[lo] and target < nums[mid]:
-    				ri = mid - 1
+			if nums[mid] >= nums[lo]:
+				if target >= nums[lo] and target < nums[mid]:
+					ri = mid - 1
 
-    			else:
-    				lo = mid + 1
-    		else:
-    			if target > nums[mid] and target <= nums[ri]:
-    				lo = mid + 1
-    			else:
-    				ri = mid - 1
+				else:
+					lo = mid + 1
+			else:
+				if target > nums[mid] and target <= nums[ri]:
+					lo = mid + 1
+				else:
+					ri = mid - 1
 
-    	return -1
+		return -1
+
 
 
 
