@@ -1,7 +1,4 @@
 
-
-
-
 class solution:
 	def BinaryLenght(self, nums, k):
 		if k == 0:
@@ -19,11 +16,6 @@ class solution:
 			next += 1
 
 		return True
-
-
-
-
-
 
 nums1 = [1,0,0,0,1,0,0,1]
 k1 = 2
