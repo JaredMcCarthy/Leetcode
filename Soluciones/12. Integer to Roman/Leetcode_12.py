@@ -11,3 +11,6 @@ class Solution(object):
                 num -= valor
 
         return "".join(resultado)
+
+sol = Solution()
+print(sol.intToRoman(121234))
