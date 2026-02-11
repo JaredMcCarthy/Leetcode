@@ -18,11 +18,8 @@ class Solution:
             if l1: l1 = l1.next
             if l2: l2 = l2.next
         return dummy_node.next
-
-
 l1 = ListNode(2, ListNode(4, ListNode(3)))  # 342
 l2 = ListNode(5, ListNode(6, ListNode(4)))  # 465
-
 
 sol = Solution()
 resultado = sol.addTwoNumbers(l1, l2)
