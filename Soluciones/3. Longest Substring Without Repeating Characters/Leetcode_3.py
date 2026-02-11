@@ -17,4 +17,7 @@ class Solution(object):
         return max_longitud
 
 
-        
+sol = Solution()
+print(sol.lengthOfLongestSubstring("abcabcbb"))
+print(sol.lengthOfLongestSubstring("bbbbb"))
+print(sol.lengthOfLongestSubstring("pwwkew"))
