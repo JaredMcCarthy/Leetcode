@@ -36,7 +36,11 @@ jobs:
           # Cambia esta ruta si tus soluciones viven en otro folder del repo
           SOLUTIONS_DIR: "Soluciones/Soluciones"
         run: |
-          python scripts/generate_problems_md.py --solutions-dir "$SOLUTIONS_DIR"
+          if [ -d "$SOLUTIONS_DIR" ]; then
+            python scripts/generate_problems_md.py --solutions-dir "$SOLUTIONS_DIR"
+          else
+            echo "No existe '$SOLUTIONS_DIR' en el repo; usando docs/problemas ya commiteado."
+          fi
 
       - name: Build site
         run: |
