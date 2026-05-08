@@ -3,7 +3,7 @@ Soluciones a problemas de **LeetCode** en **Python**, con un sitio en **MkDocs M
 
 ## Sitio
 - Puedes ver el sitio aquí: **https://jaredmccarthy.github.io/Leetcode/**
-- 
+
 ## Qué contiene este repo
 - **Soluciones en Python** organizadas por número y nombre del problema.
 - **Documentación** en `docs/` (MkDocs).
@@ -27,5 +27,5 @@ git add .
 git commit -m "agregar problema <numero>"
 git push
 ```
-Contribuciones
+##Contribuciones
 Este es un proyecto personal, si quieres usarlo, siéntete libre de hacer fork y adaptarlo a tu gusto.
