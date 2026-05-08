@@ -17,6 +17,7 @@ Soluciones a problemas de **LeetCode** en **Python**, con un sitio en **MkDocs M
 1. Agrega una carpeta nueva con el formato:
    - `Soluciones/Soluciones/<numero>. <Nombre del problema>/`
    - Dentro debe haber un solo archivo `.py` (por ejemplo `Leetcode_<numero>.py`)
+
 2. En la raíz del repo (donde está `mkdocs.yml`), corre:
 ```bash
 python3 scripts/generate_problems_md.py --solutions-dir "Soluciones/Soluciones"
@@ -27,5 +28,5 @@ git add .
 git commit -m "agregar problema <numero>"
 git push
 ```
-##Contribuciones
+## Contribuciones
 Este es un proyecto personal, si quieres usarlo, siéntete libre de hacer fork y adaptarlo a tu gusto.
