@@ -1,0 +1,59 @@
+---
+title: "3542. Minimum Operations to Convert All Elements to Zero"
+---
+
+<div class="problem-header">
+  <div class="problem-number">3542</div>
+  <div>
+    <div><strong>Minimum Operations to Convert All Elements to Zero</strong> <span class="badge-medium">Medium</span></div>
+    <div><strong>Tags:</strong> Array, Greedy, Hash Table, Monotonic Stack, Stack</div>
+  </div>
+</div>
+
+## Solución (Python)
+
+```python
+
+class Solution:
+	def minOperations(self, nums):
+		contador = 0
+
+		while any(x != 0 for x in nums):
+			grupos = self.separar_no_ceros(nums)
+
+			for grupo in grupos:
+				minimo_grupo = min(nums[idx] for idx in grupo)
+
+				for posicion_original in grupo:
+					nums[posicion_original] = nums[posicion_original] - minimo_grupo
+				contador = contador + 1
+
+		return contador
+
+	def separar_no_ceros(self, nums):
+		grupos = []
+		grupo_actual = []
+
+		for indice in range(len(nums)):
+			if nums[indice] != 0:
+				grupo_actual.append(indice)
+			else:
+				if grupo_actual:
+					grupos.append(grupo_actual)
+					grupo_actual = []
+
+		if grupo_actual:
+			grupos.append(grupo_actual)
+
+		return grupos
+
+sol = Solution()
+print(sol.minOperations([0, 2]))  # 1
+print(sol.minOperations([3, 1, 2, 1]))  # 3
+print(sol.minOperations([1, 2, 1, 2, 1, 2]))  # 4
+```
+
+<div class="navigation">
+  <a class="prev" href="../find-x-sum-of-all-k-long-subarrays-ii/">Anterior</a>
+  <span></span>
+</div>

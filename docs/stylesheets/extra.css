@@ -1,0 +1,182 @@
+/* ============================================
+   Estilos personalizados para LeetCode site
+   ============================================ */
+
+/* Scroll horizontal en móviles */
+.md-typeset pre,
+.md-typeset table {
+  overflow-x: auto;
+}
+
+/* Código inline mejorado */
+.md-typeset code {
+  padding: 0.1em 0.4em;
+  background-color: rgba(175, 184, 193, 0.2);
+  border-radius: 6px;
+  font-size: 0.85em;
+}
+
+.md-typeset pre > code {
+  border-left: 3px solid var(--md-primary-fg-color);
+  padding-left: 1em;
+}
+
+/* Badges de dificultad */
+.md-typeset .badge-easy {
+  background-color: #5cb85c;
+  color: white;
+  padding: 0.2em 0.6em;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.md-typeset .badge-medium {
+  background-color: #f0ad4e;
+  color: white;
+  padding: 0.2em 0.6em;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.md-typeset .badge-hard {
+  background-color: #d9534f;
+  color: white;
+  padding: 0.2em 0.6em;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+/* Grid de cards (para homepage) */
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.grid.cards > * {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.grid.cards > *:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navegación de problema (anterior/siguiente) */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.navigation a {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--md-primary-fg-color);
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.navigation a:hover {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+/* Tablas mejoradas */
+.md-typeset table:not([class]) {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.md-typeset table th {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.8rem;
+}
+
+.md-typeset table td {
+  padding: 0.8rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset table tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Complexity badges */
+.complexity-good {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.complexity-ok {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.complexity-bad {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* Admonitions personalizados */
+.md-typeset .admonition.question {
+  border-left-color: #448aff;
+}
+
+.md-typeset .admonition.question > .admonition-title {
+  background-color: rgba(68, 138, 255, 0.1);
+}
+
+/* Estilo para tags de lenguaje en tabs */
+.tabbed-set > input:first-child:checked ~ .tabbed-labels > :first-child,
+.tabbed-set > input:nth-child(2):checked ~ .tabbed-labels > :nth-child(2),
+.tabbed-set > input:nth-child(3):checked ~ .tabbed-labels > :nth-child(3) {
+  color: var(--md-primary-fg-color);
+}
+
+/* Header de problema */
+.problem-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.problem-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--md-primary-fg-color);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .grid.cards {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+}
