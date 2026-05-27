@@ -84,6 +84,6 @@ print(sol.BinaryLenght(nums2, k2))
 ```
 
 <div class="navigation">
-  <a class="prev" href="../find-first-and-last-position-of-element-in-sorted-array/">Anterior</a>
-  <a class="next" href="../find-x-sum-of-all-k-long-subarrays-ii/">Siguiente</a>
+  <a class="prev" href="../convert-integer-to-the-sum-of-two-no-zero-integers/">Anterior</a>
+  <a class="next" href="../minimum-number-of-increments-on-subarrays-to-form-a-target-array/">Siguiente</a>
 </div>

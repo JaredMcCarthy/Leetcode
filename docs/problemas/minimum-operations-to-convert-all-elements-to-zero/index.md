@@ -54,6 +54,6 @@ print(sol.minOperations([1, 2, 1, 2, 1, 2]))  # 4
 ```
 
 <div class="navigation">
-  <a class="prev" href="../find-x-sum-of-all-k-long-subarrays-ii/">Anterior</a>
+  <a class="prev" href="../find-closest-person/">Anterior</a>
   <span></span>
 </div>

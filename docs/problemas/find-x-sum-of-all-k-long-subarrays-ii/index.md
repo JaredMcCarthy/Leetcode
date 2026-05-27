@@ -49,6 +49,6 @@ print(sol.findXSum([1, 1, 2, 2, 3, 4, 2, 3], 6, 2))
 ```
 
 <div class="navigation">
-  <a class="prev" href="../check-if-all-1s-are-at-least-length-k-places-away/">Anterior</a>
-  <a class="next" href="../minimum-operations-to-convert-all-elements-to-zero/">Siguiente</a>
+  <a class="prev" href="../score-of-a-string/">Anterior</a>
+  <a class="next" href="../smallest-number-with-all-set-bits/">Siguiente</a>
 </div>

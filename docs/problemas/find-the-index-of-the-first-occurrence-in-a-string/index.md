@@ -1,11 +1,11 @@
 ---
-title: "28. Find the Index of the First Occurrence in a String"
+title: "28. Find the index of the First occurrence in a string"
 ---
 
 <div class="problem-header">
   <div class="problem-number">28</div>
   <div>
-    <div><strong>Find the Index of the First Occurrence in a String</strong> <span class="badge-easy">Easy</span></div>
+    <div><strong>Find the index of the First occurrence in a string</strong> <span class="badge-easy">Easy</span></div>
     <div><strong>Tags:</strong> String, String Matching, Two Pointers</div>
   </div>
 </div>
@@ -26,11 +26,11 @@ class Solution(object):
             return -1
 
 sol = Solution()
-print(sol.strStr("SADBUTSAD", "SAD"))
+print(sol.strStr("sadbutsad", "sad"))
 print(sol.strStr("leetcode", "leeto"))
 ```
 
 <div class="navigation">
   <a class="prev" href="../remove-element/">Anterior</a>
-  <a class="next" href="../search-in-rotated-sorted-array/">Siguiente</a>
+  <a class="next" href="../next-permutation/">Siguiente</a>
 </div>

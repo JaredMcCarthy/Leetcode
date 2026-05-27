@@ -81,5 +81,5 @@ print(sol.searchRange(nums3, target3))
 
 <div class="navigation">
   <a class="prev" href="../search-in-rotated-sorted-array/">Anterior</a>
-  <a class="next" href="../check-if-all-1s-are-at-least-length-k-places-away/">Siguiente</a>
+  <a class="next" href="../search-insert-position/">Siguiente</a>
 </div>

@@ -40,5 +40,5 @@ print(sol.lengthOfLongestSubstring("pwwkew"))
 
 <div class="navigation">
   <a class="prev" href="../add-two-numbers/">Anterior</a>
-  <a class="next" href="../longest-palindromic-substring/">Siguiente</a>
+  <a class="next" href="../median-of-two-arrays/">Siguiente</a>
 </div>

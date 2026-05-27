@@ -61,6 +61,6 @@ print(sol.searchRotate(nums3, target3))
 ```
 
 <div class="navigation">
-  <a class="prev" href="../find-the-index-of-the-first-occurrence-in-a-string/">Anterior</a>
+  <a class="prev" href="../next-permutation/">Anterior</a>
   <a class="next" href="../find-first-and-last-position-of-element-in-sorted-array/">Siguiente</a>
 </div>

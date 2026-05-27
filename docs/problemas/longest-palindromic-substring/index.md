@@ -40,6 +40,6 @@ if __name__ == "__main__":
 ```
 
 <div class="navigation">
-  <a class="prev" href="../longest-substring-without-repeating-characters/">Anterior</a>
+  <a class="prev" href="../median-of-two-arrays/">Anterior</a>
   <a class="next" href="../reverse-integer/">Siguiente</a>
 </div>
